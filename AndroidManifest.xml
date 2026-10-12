@@ -1,0 +1,20 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Broad package visibility is needed to list installed apps. Google Play restricts
+         QUERY_ALL_PACKAGES to qualifying core-use cases; review policy before publishing. -->
+    <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES" />
+
+    <application
+        android:allowBackup="false"
+        android:label="DroidShield"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.DroidShield">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>

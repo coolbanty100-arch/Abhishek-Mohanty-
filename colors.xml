@@ -1,0 +1,10 @@
+<resources>
+    <color name="ds_bg">#0B1220</color>
+    <color name="ds_surface">#131E30</color>
+    <color name="ds_surface_2">#1A2940</color>
+    <color name="ds_green">#39D98A</color>
+    <color name="ds_text">#F2F6FC</color>
+    <color name="ds_muted">#9AABC2</color>
+    <color name="ds_yellow">#FFC857</color>
+    <color name="ds_red">#FF6B75</color>
+</resources>

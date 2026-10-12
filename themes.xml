@@ -1,0 +1,12 @@
+<resources>
+    <style name="Theme.DroidShield" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/ds_green</item>
+        <item name="colorPrimaryVariant">@color/ds_green</item>
+        <item name="colorSecondary">@color/ds_green</item>
+        <item name="android:statusBarColor">@color/ds_bg</item>
+        <item name="android:navigationBarColor">@color/ds_bg</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowLightNavigationBar">false</item>
+        <item name="android:windowBackground">@color/ds_bg</item>
+    </style>
+</resources>

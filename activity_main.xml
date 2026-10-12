@@ -1,0 +1,46 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/ds_bg" android:fillViewport="true">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:padding="20dp">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="DROIDSHIELD" android:textColor="@color/ds_green" android:textStyle="bold"
+            android:textSize="13sp" android:letterSpacing="0.16" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Your device.\nYour security." android:textColor="@color/ds_text"
+            android:textSize="30sp" android:textStyle="bold" android:layout_marginTop="8dp" />
+        <TextView android:id="@+id/subtitle" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Run a local security check of installed apps or an APK file." android:textColor="@color/ds_muted"
+            android:textSize="14sp" android:layout_marginTop="8dp" />
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical" android:padding="0dp"
+            android:layout_marginTop="24dp">
+            <TextView android:id="@+id/status" android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:background="@color/ds_surface" android:padding="18dp" android:text="READY TO SCAN"
+                android:textColor="@color/ds_green" android:textStyle="bold" android:textSize="14sp" />
+            <TextView android:id="@+id/summary" android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:background="@color/ds_surface" android:paddingStart="18dp" android:paddingEnd="18dp"
+                android:paddingBottom="18dp" android:text="No scan has been run yet." android:textColor="@color/ds_text"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <Button android:id="@+id/scanAppsButton" android:layout_width="match_parent" android:layout_height="56dp"
+            android:text="Scan installed apps" android:textAllCaps="false" android:textStyle="bold"
+            android:textColor="@color/ds_bg" android:backgroundTint="@color/ds_green" android:layout_marginTop="18dp" />
+        <Button android:id="@+id/scanApkButton" android:layout_width="match_parent" android:layout_height="54dp"
+            android:text="Choose APK to inspect" android:textAllCaps="false" android:textColor="@color/ds_text"
+            android:backgroundTint="@color/ds_surface_2" android:layout_marginTop="10dp" />
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="SCAN RESULTS" android:textColor="@color/ds_muted" android:textStyle="bold"
+            android:textSize="12sp" android:letterSpacing="0.12" android:layout_marginTop="28dp" />
+        <TextView android:id="@+id/results" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Results will appear here." android:textColor="@color/ds_text" android:textSize="14sp"
+            android:background="@color/ds_surface" android:padding="16dp" android:layout_marginTop="10dp" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Important: heuristic findings are risk indicators, not proof of malware. Android sandboxing limits what this app can inspect. No cloud uploads are performed."
+            android:textColor="@color/ds_muted" android:textSize="12sp" android:lineSpacingExtra="3dp"
+            android:layout_marginTop="18dp" android:layout_marginBottom="18dp" />
+    </LinearLayout>
+</ScrollView>
